@@ -13,7 +13,7 @@
 
 
 (defn qsort [ls]
-  (assert (>= (len ls) 0) "ls.len >= 0 is required")
+  (assert (>= (len ls) 0) "len(ls) >= 0 is required")
   (cond
     [(= (len ls) 0) []]
     [(= (len ls) 1) ls]
