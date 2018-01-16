@@ -1,8 +1,8 @@
 (defn bswap [ls]
-  (assert (>= (len ls) 1) "ls.len >= 1 is required")
+  (assert (>= (len ls) 0) "len(ls) >= 0 is required")
   (cond
-    [(= (len ls) 1)
-      ls]
+    [(= (len ls) 0) []]
+    [(= (len ls) 1) ls]
     [True
       (cond
         [(> (first ls) (second ls))
